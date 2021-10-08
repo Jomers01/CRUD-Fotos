@@ -11,6 +11,7 @@ export const postFotos = ()=> {
 
 }
 
-export const deleteFotos = ()=> {
-
+export const deleteFotos = (id)=> {
+    axios.delete(`https://jsonplaceholder.typicode.com/photos/${id}`)
+    .then(resp=> alert('Borrado con exito'))
 }

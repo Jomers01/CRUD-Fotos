@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { getFotos } from '../../helpers/crudFotos/crudFotos'
+import { deleteFotos, getFotos } from '../../helpers/crudFotos/crudFotos'
 import './styleFotos.css'
 
 const Fotos = () => {
@@ -11,8 +11,8 @@ const Fotos = () => {
         .then(resp=> setFotos(resp.data))
     }, [fotos])
 
-    const deleteF = ()=> {
-        
+    const deleteF = (id)=> {
+        deleteFotos(id)
     }
 
     return (
