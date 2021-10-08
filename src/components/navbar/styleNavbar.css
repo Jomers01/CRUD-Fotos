@@ -1,0 +1,19 @@
+/* Estilos del navbar */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-navbar{
+    background-color: #444;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: large;
+    color: #FFF;
+}
